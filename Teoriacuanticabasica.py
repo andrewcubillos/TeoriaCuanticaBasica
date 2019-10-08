@@ -60,10 +60,33 @@ def observable(X,Y):
             
                    
                    multi[i][j] += sustra[i][k] * sustra[k][j]
-            
-                
-                   
-        
 
+
+
+def dynamic(X,V,n):
+    Y=X
+    result = [[0 for j in range(len(X))] for i in range(len(Y[0]))]
+    ssum=(0,0)
+    for t in range(n):
+        for i in range(len(X)):
+            
+           for j in range(len(Y[0])):
+
+               for k in range(len(Y)):
+                   result[i][j] =suma(ssum,producto(X[i][k],Y[k][j]))
+                   ssum=result[i][j]
+               ssum =(0,0)
+               
+        Y=result
+    
+    result2 = [[0 for j in range(len(X))] for i in range(len(Y[0]))]
+    ssum2=(0,0)
+    for i in range(len(X)):
         
-        
+       for j in range(len(Y[0])):
+
+           for k in range(len(Y)):
+               result[i][j] =suma(ssum2,producto(X[i][k],Y[k][j]))
+               ssum2=result[i][j]
+           ssum2 =(0,0)
+           
