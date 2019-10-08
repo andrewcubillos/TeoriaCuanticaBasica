@@ -33,25 +33,37 @@ def transition(V1,V2):
 def observable(X,Y):
     if hermitian(X)=="The matrix is hermitian":
         result =[[0 for x in range(len(Y[0]))] for y in range(len(Y))]
-        for h in range(n-1):
-            for i in range(len(X)):
+        for i in range(len(X)):
+           
+           for j in range(len(Y[0])):
                
-               for j in range(len(Y[0])):
+               for k in range(len(Y)):
+            
                    
-                   for k in range(len(Y)):
-                
-                       
-                       result[i][j] += X[i][k] * Y[k][j]
+                   result[i][j] += X[i][k] * Y[k][j]
 
         bra=conjugada(result)
-        total2=(0,0)
+        media=(0,0)
         for z,y in zip(bra,Y):
-            total2=suma(total,producto(z,y))
+            media=suma(media,producto(z,y))
+        return total2
     
         identidad=[[(total2[0],0) if j == i else (0,0) for j in range(len(X))] for i in range(len(X[0]))]
-        s=[[resta(X[i][j],identidad[i][j]) for j in range(len(X[0]))] for i in range(len(identidad))]
-        
+        sustra=[[resta(X[i][j],identidad[i][j]) for j in range(len(X[0]))] for i in range(len(identidad))]
 
+        multi=[[0 for x in range(len(sustra[0]))] for y in range(len(sustra))]   
+        for i in range(len(sustra)):
+           
+           for j in range(len(sustra[0])):
+               
+               for k in range(len(sustra)):
+            
+                   
+                   multi[i][j] += sustra[i][k] * sustra[k][j]
+            
+                
+                   
+        
 
         
         
