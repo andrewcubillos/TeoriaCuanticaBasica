@@ -53,7 +53,7 @@ y listo!.
 Para poder usar esta libreria es necesario:
 Si lo prefiere puede usar el codigo depruebas y modificar los valores a su necesidad, o puede importar las librerias a su  archivo creado o crear uno nuevo.
 
-![myimage-alt-tag](https://scontent.fbog2-2.fna.fbcdn.net/v/t1.15752-9/71401851_1707362362728247_8866192136928755712_n.png?_nc_cat=104&_nc_oc=AQnHpdESvbgt-YHXoK6oIFEnzznj87EjTA2eoR6ITt30Z7oUdbAKptUBxJgJyfZOHzw&_nc_ht=scontent.fbog2-2.fna&oh=32bf12334222607895f0b99eb322ab5d&oe=5E2D3CF3) 
+![myimage-alt-tag](https://scontent.fbog2-1.fna.fbcdn.net/v/t1.15752-9/72490138_2517685775176578_7494171946687397888_n.png?_nc_cat=101&_nc_oc=AQn7JFo0VgztG0BAnLrMb_Y82O_dw2H-ArQplxH-yS_RrwPrHhyrKI1-jJDllq69MMo&_nc_ht=scontent.fbog2-1.fna&oh=3b8288cd0f5c76a959cc64d61430dac8&oe=5E201E5D) 
 
 
 # Ejecutando las pruebas ⚙️
