@@ -28,14 +28,14 @@ Cuando termine de descargar hay que proceder a instalarlo:
 
 ![GitHub Logo](https://www.wikihow.com/images_en/thumb/f/fb/Install-Python-Step-4-Version-2.jpg/v4-760px-Install-Python-Step-4-Version-2.jpg)
 
- # Instalación de Operaciones Con Vectores y Matrices 🔧
+ # Instalación de Teoriacuanticabasica  🔧
 Primero: 
 ![myimage-alt-tag](https://scontent-bog1-1.xx.fbcdn.net/v/t1.15752-9/69874998_750459472059681_3913524228170711040_n.png?_nc_cat=109&_nc_oc=AQnAHS7ixOACxFw9VZIuFwoJKytHypC0c9lCVCRXGIho84rLNJiPg55F4K2wzo2JtM4&_nc_ht=scontent-bog1-1.xx&oh=a5c49974e0f359c923370686c6d86f6e&oe=5DC80CBF) 
 
 
 Segundo:
  
-![myimage-alt-tag](https://scontent-bog1-1.xx.fbcdn.net/v/t1.15752-9/70678769_2608600409202096_5609513835909087232_n.png?_nc_cat=101&_nc_oc=AQk5bpFi6zdMwJygs22sr6bhKf6P0KFDBJcOLnnaSZ9jYS3D6cWzyF1gNewZOjFT8VI&_nc_ht=scontent-bog1-1.xx&oh=e2d320ca92637cf344136875a2d80a61&oe=5E031292) 
+![myimage-alt-tag](https://scontent.fbog2-3.fna.fbcdn.net/v/t1.15752-9/72042208_920180465032471_1197267119247458304_n.png?_nc_cat=109&_nc_oc=AQk8VmUAsmafBFNi11FktqFTVhOFE_Eg3H7SMKznlG82IKlw7gOu6A-vFM6fMuZ1QZw&_nc_ht=scontent.fbog2-3.fna&oh=6de7cb25aaa8888db3b31874f1a7d44e&oe=5E3CB905) 
 
 
 Luego abrimos el IDLE de python
