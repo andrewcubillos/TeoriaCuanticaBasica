@@ -1,6 +1,7 @@
 # TeoriaCuanticaBasica
 
 **Estados Cuanticos**
+
 Muestra la probabilidad de que una particula se encuentre en una posicion, y calcula la amplitud de transicion de un vector ket a otro.
 
 **Observable**
