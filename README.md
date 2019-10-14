@@ -1,16 +1,15 @@
 # TeoriaCuanticaBasica
 
-****
-Muestra el estado de un sistema clasico, despues de ciertos clicks de tiempo.
+**Estados Cuanticos**
+Muestra la probabilidad de que una particula se encuentre en una posicion, y calcula la amplitud de transicion de un vector ket a otro.
 
-**Sistema Probabilistco:**
+**Observable**
 
-Muestra la probabilidad de que un elemento se encuentre en algun estado del sistema, despues de determinados clicks de tiempo.
+Muestra la media y la varianza de un observable.
 
-**Sistema Cuantico:**
+**Propios**
 
-Muestra la probabilidad de que una particula,foton,electron se encuentre en algun estado del sistema, despues de determinados clicks de tiempo.
-
+Muestra los valores y vectores propios de un vector y muestra la probabilidad de transicion de un vector a un vector propio.
 
 
 
@@ -61,11 +60,12 @@ Si lo prefiere puede usar el codigo depruebas y modificar los valores a su neces
 
 
 ![myimage-alt-tag](https://scontent.fbog2-1.fna.fbcdn.net/v/t1.15752-9/73101350_2487198311565634_5226267543240441856_n.png?_nc_cat=102&_nc_oc=AQmx_TDLC9RH_yX2h83ndAScBo7Mq6ijbafCpZ0R7E8Ma_ebAgKuOVXPktv7ajxbii4&_nc_ht=scontent.fbog2-1.fna&oh=4662ce68e1158c2dbb011aa8c37590f3&oe=5E2CCCF4) 
-# ...Expliacion:
+
+# ...Explicación:
 **position_transition**
 Usuario especifica el número de puntos posibles y un vector ket y el sistema calcula las probabilidades de encontrar partícula en una posición. El sistema puede recibir dos vectores y calcular la probabilidad de transitar de el uno al otro después de hacer la observación
 La funcion tiene como primer argumento un vector ket, el segundo argumento es la posicion a averiguar y por ultimo el tercer argumento es vector ket.
-Antes de la llamada a la funcion esta la respuesta correcta la cual es en primer lugar la posicion y en segundo la transicion, con todo esto el sistema validara si todo esta en buen funcionamiento.
+Antes de la llamada a la funcion esta la respuesta correcta la cual es en primer lugar la posicion y en segundo la probabilidad o amplitud de transicion, con todo esto el sistema validara si todo esta en buen funcionamiento.
 
 
        def test1(self):
@@ -91,7 +91,7 @@ La funcion recibe dos argumentos,el primero una matriz y el segundo un vector ke
 **propios**
 El sistema calcula los valores propios del observable y la probabilidad de que el sistema transite a alguno de los vectores propios después de la observación.
 La funcion tiene dos argumentos los cuales son vectores ket.
-Antes de la llamada a la funcion esta la respuesta correcta, la cual esta en el siguiente orden: valores propios,vectores propios y transicion a alguno de los vectores propios , con todo esto el sistema validara si todo esta en buen funcionamiento.
+Antes de la llamada a la funcion esta la respuesta correcta, la cual esta en el siguiente orden: valores propios,vectores propios y la probabilidad o amplitud de transicion a alguno de los vectores propios , con todo esto el sistema validara si todo esta en buen funcionamiento.
 
 
         def test3(self):
