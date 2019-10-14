@@ -1,6 +1,6 @@
 # TeoriaCuanticaBasica
 
-**Sistemas Clasicos Deterministicos:**
+****
 Muestra el estado de un sistema clasico, despues de ciertos clicks de tiempo.
 
 **Sistema Probabilistco:**
@@ -35,7 +35,7 @@ Primero:
 
 Segundo:
  
-![myimage-alt-tag](https://scontent.fbog2-3.fna.fbcdn.net/v/t1.15752-9/72042208_920180465032471_1197267119247458304_n.png?_nc_cat=109&_nc_oc=AQk8VmUAsmafBFNi11FktqFTVhOFE_Eg3H7SMKznlG82IKlw7gOu6A-vFM6fMuZ1QZw&_nc_ht=scontent.fbog2-3.fna&oh=6de7cb25aaa8888db3b31874f1a7d44e&oe=5E3CB905) 
+![myimage-alt-tag](https://scontent.fbog2-2.fna.fbcdn.net/v/t1.15752-9/73027169_1232838573555361_8251104875421630464_n.png?_nc_cat=103&_nc_oc=AQlGn5RRjS4RsqY5WRBAX4W2bGlpzGxTFLhZooh33KeMJ_jxbRe17jg6cyle5GBeMQM&_nc_ht=scontent.fbog2-2.fna&oh=cde8bb57580b271ee78405a2f25d9bbf&oe=5E2568B7) 
 
 
 Luego abrimos el IDLE de python
@@ -53,41 +53,86 @@ y listo!.
 Para poder usar esta libreria es necesario:
 Si lo prefiere puede usar el codigo depruebas y modificar los valores a su necesidad, o puede importar las librerias a su  archivo creado o crear uno nuevo.
 
-![myimage-alt-tag](https://scontent.fbog2-1.fna.fbcdn.net/v/t1.15752-9/72490138_2517685775176578_7494171946687397888_n.png?_nc_cat=101&_nc_oc=AQn7JFo0VgztG0BAnLrMb_Y82O_dw2H-ArQplxH-yS_RrwPrHhyrKI1-jJDllq69MMo&_nc_ht=scontent.fbog2-1.fna&oh=3b8288cd0f5c76a959cc64d61430dac8&oe=5E201E5D) 
+![myimage-alt-tag](https://scontent.fbog2-3.fna.fbcdn.net/v/t1.15752-9/72169565_925751381140054_1140033531817230336_n.png?_nc_cat=109&_nc_oc=AQmp8FvKBqaEXI6P89Bb6PO0DPuvHLap73kyCKvcxEmRu1w-uBSfO9L3yKqJ_kFWbB8&_nc_ht=scontent.fbog2-3.fna&oh=2997503a42cfd6855c012a9ed2fcc4e8&oe=5E2BDE8B) 
 
 
 # Ejecutando las pruebas ⚙️
-![myimage-alt-tag](https://scontent.fbog2-1.fna.fbcdn.net/v/t1.15752-9/72209269_405494757032656_6677285436324315136_n.png?_nc_cat=102&_nc_oc=AQnVwvVIiYBZMvdC36vzXQBbPOlU08I_gG8fUtb6hg1cKT28KXZxqWZFePFH30lPtKM&_nc_ht=scontent.fbog2-1.fna&oh=d7db3c9444cfd3bc255f93fd8541a848&oe=5E32CD46) 
+![myimage-alt-tag](https://scontent.fbog2-1.fna.fbcdn.net/v/t1.15752-9/72301970_554213588668160_3379115990288695296_n.png?_nc_cat=106&_nc_oc=AQnICTcFSlZnph5skiM1vVl8PKn75bHipRwgzEs0qYMZdSjgIwwL1NAT_AHjqCuRB7M&_nc_ht=scontent.fbog2-1.fna&oh=103d9fa92019eeb5b5f9587b2c823cd0&oe=5E22FECD) 
 
 
-![myimage-alt-tag](https://scontent.fbog2-3.fna.fbcdn.net/v/t1.15752-9/71701890_410168889646315_9105454847909429248_n.png?_nc_cat=111&_nc_oc=AQkvYinrQkJsb6tuEsK_HcIN8xvbKrUN-ZDq9yp8-KmtE_MGRNA7o32IXQAt2md7EBg&_nc_ht=scontent.fbog2-3.fna&oh=97ac30abd292aa080936b6249b527ec1&oe=5E2DEE06) 
+![myimage-alt-tag](https://scontent.fbog2-1.fna.fbcdn.net/v/t1.15752-9/73101350_2487198311565634_5226267543240441856_n.png?_nc_cat=102&_nc_oc=AQmx_TDLC9RH_yX2h83ndAScBo7Mq6ijbafCpZ0R7E8Ma_ebAgKuOVXPktv7ajxbii4&_nc_ht=scontent.fbog2-1.fna&oh=4662ce68e1158c2dbb011aa8c37590f3&oe=5E2CCCF4) 
 # ...Expliacion:
-**position**
-Al simulador se le ingresa un un vector, el cual es el primer argumento de la funcion "position" y la posicion cuyo lugar es como segundo argumento de la funcion. La respuesta correcta a la consulta de: 
-      "la probabilidad de estar en una posicion particular", se muestra antes de la llamada a la funcion.
+**position_transition**
+Usuario especifica el número de puntos posibles y un vector ket y el sistema calcula las probabilidades de encontrar partícula en una posición. El sistema puede recibir dos vectores y calcular la probabilidad de transitar de el uno al otro después de hacer la observación
+La funcion tiene como primer argumento un vector ket, el segundo argumento es la posicion a averiguar y por ultimo el tercer argumento es vector ket.
+Antes de la llamada a la funcion esta la respuesta correcta la cual es en primer lugar la posicion y en segundo la transicion, con todo esto el sistema validara si todo esta en buen funcionamiento.
 
-     def test1(self):
-         self.assertEqual(0.05263157894736842,
 
-                          position([(-3,-1),
-                                    (0,-2),
-                                    (0,1),
-                                    (2,0)],     2))
-**transition**
+       def test1(self):
+        self.assertEqual(0.05263157894736842   (0.36842105263157887, 0.31578947368421045),
+                         Teoriacuanticabasica.position_transition([(-3,-1),
+                                                (0,-2),
+                                                (0,1),
+                                                (2,0)],   2 ,[(-3,-1),
+                                                               (0,-2),
+                                                               (0,1),
+                                                                (2,0)]))
 
-Al simulador se le ingresa dos ket, siendo los dos argumentos de la funcion "transition" la respuesta correcta a la consulta de:  
-"la probabilidad de transitar del primer vector al segundo", se muestra antes de la llamada a la funcion.
-    
+**observable**
+Una matriz  describe un observable y un vector ket, el sistema revisa que la matriz sea hermitiana, y si lo es, calcula la media y la varianza del observable en el estado dado.
+La funcion recibe dos argumentos,el primero una matriz y el segundo un vector ket. Antes de la llamada a la funcion esta la respuesta correctael primer valor corresponde a la media y el segundo a la varianza, con todo esto el sistema validara si todo esta en buen funcionamiento.
+
         def test2(self):
-            self.assertEqual((0,-0.9999999999999998),
+        self.assertEqual(2.5,0.25,Teoriacuanticabasica.observable([[(1,0),(0,-1)],
+                                  [(0,1),(2,0)]],[((2**(1/2))/2,0),
+                                                     (0,(2**(1/2))/2)]))
 
-                             transition([(0,-1),
-                                         (1,0)],    [(1,0),
-                                                     (0,-1)]))
 
+**propios**
+El sistema calcula los valores propios del observable y la probabilidad de que el sistema transite a alguno de los vectores propios después de la observación.
+La funcion tiene dos argumentos los cuales son vectores ket.
+Antes de la llamada a la funcion esta la respuesta correcta, la cual esta en el siguiente orden: valores propios,vectores propios y transicion a alguno de los vectores propios , con todo esto el sistema validara si todo esta en buen funcionamiento.
+
+
+        def test3(self):
+        self.assertEqual([[-1  ,1] [-1,  1]],[[[-0.70710678,  0.70710678]
+                                                                            [ 0.70710678 , 0.70710678]]
+
+                                                                            [[ 0,         1        ]
+                                                                            [ 1,          0        ]]],(0,-0.9999999999999998)),
+        Teoriacuanticabasica.propios([(0,-1),
+                                     (1,0)],    [(1,0),
+                                                   (0,-1)],)
+
+**dynamic**
+El simulador ahora considera la dinámica del sistema. Ahora con una serie de matrices Un el sistema calcula el estado final a partir de un estado inicial.
+La funcion que hace esto recibe 3 argumentos, el primero una matriz,  el segundo un vectory el tercero la cantidad de clicks.
+Antes de la llamada a la funcion esta la respuesta correcta la cual es un vector, con todo esto el sistema validara si todo esta en buen funcionamiento.
+
+    #Sistema dinamico
+    def test3(self):
+        self.assertEqual([[0.0], 
+                          [0.0], 
+                          [0.0], 
+                          [0.16666666666666666],
+                          [0.16666666666666666],
+                          [0.3333333333333333],
+                          [0.16666666666666666],
+                          [0.16666666666666666]],
+
+         Teoriacuanticabasica.dynamic(     [[0, 0, 0, 0, 0, 0, 0, 0], 
+                                            [0.5, 0, 0, 0, 0, 0, 0, 0], 
+                                            [0.5, 0, 0, 0, 0, 0, 0, 0],
+                                            [0, 0.3333333333333333, 0, 1, 0, 0, 0, 0],
+                                            [0, 0.3333333333333333, 0, 0, 1, 0, 0, 0],
+                                            [0, 0.3333333333333333, 0.3333333333333333, 0, 0, 1, 0, 0],
+                                            [0, 0, 0.3333333333333333, 0, 0, 0, 1, 0],
+                                            [0, 0, 0.3333333333333333, 0, 0, 0, 0, 1]],
+
+                                            [[1],[0],[0],[0],[0],[0],[0],[0]],       2))
 # Ejemplo1:
 
-    def position(V,p):
+    def position_transition(V,p,V2):
         raiz=0
 
         for i in V:
@@ -95,27 +140,47 @@ Al simulador se le ingresa dos ket, siendo los dos argumentos de la funcion "tra
 
         prob =((V[p][0]**2)+(V[p][1]**2))/raiz
 
-        return prob
 
-# Ejemplo2:
-
-    def transition(V1,V2):
         total=(0,0)
         norm1=0
         norm2=0
+        V1=V
         for z,y in zip(V1,V2):
             total=suma(total,producto(z,y))
             norm1+=(z[0]**2)+(z[1]**2)
             norm2+=(y[0]**2)+(y[1]**2)
-        
+
         norm1f=norm1**(1/2)
 
         norm2f=norm2**(1/2)
 
 
         deno=norm1f*norm2f
-        
-        return((total[0]/deno),(total[1]/deno))
+
+
+        return (prob," ",((total[0]/deno),(total[1]/deno)))
+
+# Ejemplo2:
+
+    def propios(X,V):
+        a = np.array(X)
+        w, v = LA.eigh(a)
+        prop=v[0]
+        total = (0, 0)
+        norm1 = 0
+        norm2 = 0
+        V1 = V
+        for z, y in zip(V1, prop):
+            total = suma(total, producto(z, y))
+            norm1 += (z[0] ** 2) + (z[1] ** 2)
+            norm2 += (y[0] ** 2) + (y[1] ** 2)
+
+        norm1f = norm1 ** (1 / 2)
+
+        norm2f = norm2 ** (1 / 2)
+
+        deno = norm1f * norm2f
+        return(w,,v,(total[0] / deno), (total[1] / deno))
   
 
 
