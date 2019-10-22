@@ -13,11 +13,17 @@ class PruebasFunciones(unittest.TestCase):
                                                                (0,-2),
                                                                (0,1),
                                                                 (2,0)]))
+        
+        
     #Media y Varianza
     def test2(self):
         self.assertEqual(2.5,0.25,Teoriacuanticabasica.observable([[(1,0),(0,-1)],
                                   [(0,1),(2,0)]],[((2**(1/2))/2,0),
                                                      (0,(2**(1/2))/2)]))
+        
+        
+        
+        
     #Valores propios,vetores propios,Transicion
     def test3(self):
         self.assertEqual([[-1  ,1] [-1,  1]],[[[-0.70710678,  0.70710678]
@@ -28,6 +34,8 @@ class PruebasFunciones(unittest.TestCase):
         Teoriacuanticabasica.propios([(0,-1),
                                      (1,0)],    [(1,0),
                                                    (0,-1)],)
+        
+        
 
     #Sistema dinamico
     def test3(self):
